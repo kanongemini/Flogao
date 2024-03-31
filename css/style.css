@@ -1,0 +1,100 @@
+/* Estilo geral */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+/* Conteúdo principal */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  width: 80%;
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* Seção "Sobre o Flogão Recriado" */
+section:first-of-type {
+  text-align: justify;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/* Seção "Fotos" */
+section:last-of-type {
+  text-align: center;
+}
+
+img {
+  margin: 0 auto;
+  display: block;
+}
+
+/* Rodapé */
+footer {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 10px;
+}
+
+p {
+  font-size: 0.8em;
+  margin: 0;
+}
+#esquerda, #direita {
+  width: 20%;
+  float: left;
+  margin: 10px;
+}
+
+#main {
+  width: 60%;
+  margin: 0 auto;
+}
+#perfil {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+header {
+  position: relative;
+}
+@media (max-width: 768px) {
+  /* Ajustar o layout para dispositivos móveis */
+  #main {
+    width: 100%;
+  }
+  #perfil {
+    display: none;
+  }
+}
